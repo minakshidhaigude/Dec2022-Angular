@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <h1><i class="fa-solid fa-fire"></i> New Posted Data</h1>
+
+    <div class="points">
+      <div>{{ artical.votes }}</div>
+      <div>Point</div>
+    </div>
+    <div class="details">
+      <div>
+        <a href="{{ artical.link }}">{{ artical.title }}</a>
+        <div>Angular Reddit Project</div>
+      </div>
+      <div class="vote">
+        <div class="btn btn-primary" (click)="vote_Up()">
+          <i class="fa fa-thumbs-up"></i>
+        </div>
+        &nbsp;
+
+        <div class="btn btn-danger" (click)="vote_Down()">
+          <i class="fa fa-thumbs-down"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

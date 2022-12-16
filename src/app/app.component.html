@@ -1,0 +1,45 @@
+<!-- <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">NewsTC</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Home</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+<h1 class="text-center">Reddit Applcation</h1>
+<hr />
+<div class="container">
+  <div class="row">
+    <h3>Add a Post</h3>
+    <div class="col-md-6">
+      <div class="title-container">
+        <label for="title" class="mt-2">Title</label>
+        <input class="form-control" type="text" id="title" #title />
+      </div>
+
+      <div class="link-container">
+        <label for="link" class="mt-2">Link</label>
+        <input class="form-control" type="text" id="link" #link />
+      </div>
+      <button class="btn btn-success mt-2" (click)="addArticle(title, link)">
+        Submit
+      </button>
+    </div>
+  </div>
+</div>
+<app-article *ngFor="let article of articals" [artical]="article"></app-article>
